@@ -2,10 +2,10 @@
     background: #686de0;
     width: 100vw;
     padding: 1rem;
-}
 
-.hero__title {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
+    .hero__title {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
 }
