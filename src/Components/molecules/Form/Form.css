@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background: #c2c2ff;
+}
+
+.form__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
