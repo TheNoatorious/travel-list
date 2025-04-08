@@ -5,9 +5,13 @@ type ButtonProps = {
     disabled?: boolean;
 };
 
-const Button = ({ label, onClick }: ButtonProps) => {
+const Button = ({ label, onClick, disabled = true }: ButtonProps) => {
     return (
-        <button className="btn btn--primary" onClick={onClick}>
+        <button
+            className="btn btn--primary"
+            onClick={onClick}
+            disabled={disabled}
+        >
             {label}
         </button>
     );
