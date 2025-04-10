@@ -4,6 +4,7 @@ import InputField from "../../atoms/InputField/InputField";
 import "./Form.css";
 
 const Form = (): React.JSX.Element => {
+    const [description, setDescription] = useState("");
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     };
