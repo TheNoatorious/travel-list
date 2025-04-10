@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../../atoms/Button/Button";
 import DropDown from "../../atoms/DropDown/DropDown";
 import InputField from "../../atoms/InputField/InputField";
@@ -17,7 +18,14 @@ const Form = (): React.JSX.Element => {
                     options={Array.from({ length: 20 }, (_, i) => i + 1)}
                     onChange={() => {}}
                 />
-                <InputField placeholder={"Skippy ball"} type={"text"} />
+                <InputField
+                    placeholder={"Skippy ball"}
+                    type={"text"}
+                    value={description}
+                    onChange={(e) => {
+                        setDescription(e.target.value);
+                    }}
+                />
                 <Button label={"Add"} disabled={false} />
             </div>
         </form>
